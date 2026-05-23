@@ -8,32 +8,32 @@ const NAV_LINKS = [
   {
     title: "about",
     href: "#about",
-    img: "/public/Images/ab2.png",
+    img: "/Images/ab2.png",
   },
   {
     title: "experience",
     href: "#experience",
-    img: "/public/Images/Experience.png",
+    img: "/Images/Experience.png",
   },
   {
     title: "skills",
     href: "#skills",
-    img: "/public/Images/skills.png",
+    img: "/Images/skills.png",
   },
   {
     title: "projects",
     href: "#projects",
-    img: "/public/Images/proj2.png",
+    img: "/Images/proj2.png",
   },
   {
     title: "certifications",
     href: "#certifications",
-    img: "/public/Images/Certifications.png",
+    img: "/Images/Certifications.png",
   },
   {
     title: "contact",
     href: "#contact",
-    img: "/public/Images/Contact.png",
+    img: "/Images/Contact.png",
   },
 ];
 
