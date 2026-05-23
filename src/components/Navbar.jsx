@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { logo } from "../assets";
 
 const NAV_LINKS = [
-  { title: "home", href: "#hero", img: "/public/Images/home.png" },
+  { title: "home", href: "#hero", img: "/Images/home.png" },
   {
     title: "about",
     href: "#about",
