@@ -1,5 +1,7 @@
 import About from "./About";
 import Achievement from "./Achievement";
+import Experience from "./Experience";
+import Education from "./Education";
 import {
   BallCanvas,
   ComputersCanvas,
@@ -17,6 +19,8 @@ import Works from "./Works";
 export {
   About,
   Achievement,
+  Experience,
+  Education,
   BallCanvas,
   CanvasLoader,
   ComputersCanvas,

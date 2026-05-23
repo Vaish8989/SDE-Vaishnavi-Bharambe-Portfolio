@@ -3,8 +3,9 @@ import { BrowserRouter } from "react-router-dom";
 import {
   About,
   Achievement,
+  Experience,
+  Education,
   Contact,
-  Feedbacks,
   Hero,
   Navbar,
   Preloader,
@@ -21,7 +22,7 @@ const App = () => {
       <BrowserRouter>
         <div
           className="relative z-0"
-          style={{ backgroundColor: "hsl(222.2 84% 4.9%)" }}
+          style={{ backgroundColor: "#050505" }}
         >
           <ElasticCursor />
           <EasterEggs />
@@ -31,10 +32,11 @@ const App = () => {
           </div>
           <StarsCanvas />
           <About />
-          <Achievement />
+          <Experience />
           <SkillKeyboard />
           <Works />
-          <Feedbacks />
+          <Achievement />
+          <Education />
           <div className="relative z-0">
             <Contact />
           </div>

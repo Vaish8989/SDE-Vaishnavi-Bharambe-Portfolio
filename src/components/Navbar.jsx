@@ -4,36 +4,36 @@ import { Link } from "react-router-dom";
 import { logo } from "../assets";
 
 const NAV_LINKS = [
-  { title: "home", href: "#hero", img: "/assets/nav-link-previews/home.png" },
+  { title: "home", href: "#hero", img: "/public/Images/home.png" },
   {
     title: "about",
     href: "#about",
-    img: "/assets/nav-link-previews/about.png",
+    img: "/public/Images/ab2.png",
   },
   {
-    title: "achievements",
-    href: "#achievements",
-    img: "/assets/nav-link-previews/achievements.png",
+    title: "experience",
+    href: "#experience",
+    img: "/public/Images/Experience.png",
   },
   {
     title: "skills",
     href: "#skills",
-    img: "/assets/nav-link-previews/skills.png",
+    img: "/public/Images/skills.png",
   },
   {
-    title: "project",
+    title: "projects",
     href: "#projects",
-    img: "/assets/nav-link-previews/projects.png",
+    img: "/public/Images/proj2.png",
   },
   {
-    title: "testimonials",
-    href: "#testimonials",
-    img: "/assets/nav-link-previews/testimonials.png",
+    title: "certifications",
+    href: "#certifications",
+    img: "/public/Images/Certifications.png",
   },
   {
     title: "contact",
     href: "#contact",
-    img: "/assets/nav-link-previews/contact.png",
+    img: "/public/Images/Contact.png",
   },
 ];
 
@@ -112,7 +112,7 @@ const Navbar = () => {
       className={`z-30 fixed top-0 left-0 w-full transition-colors duration-500 ease-in  ${scrolled ? "backdrop-blur-xl" : ""
         } `}
       style={{
-        background: scrolled ? "rgba(10,10,20,0.8)" : "transparent",
+        background: scrolled ? "rgba(5,5,5,0.8)" : "transparent",
       }}
       initial={{ y: -80 }}
       animate={{ y: 0 }}
@@ -120,10 +120,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between max-w-8xl my-2 mx-4 relative">
         <a href="#hero" className="flex mx-6 items-center justify-center">
-          <span className="text-md">
-            <h1 style={{ fontSize: "35px", fontWeight: "500" }}>genZcoder</h1>
-            {/* <img src={logo} alt="logo" className="h-16 object-contain" /> */}
-          </span>
+
         </a>
         <button
           onClick={() => setIsActive((v) => !v)}
@@ -199,7 +196,7 @@ const Navbar = () => {
         initial="initial"
         animate={isActive ? "enter" : "exit"}
         className="w-full left-0 absolute"
-        style={{ zIndex: 20, background: "rgba(7,8,13,0.9)" }}
+        style={{ zIndex: 20, background: "rgba(5,5,5,0.9)" }}
       >
         <AnimatePresence>
           {isActive && (
@@ -233,11 +230,11 @@ const Navbar = () => {
                         display: "inline-block",
                         margin: 0,
                         color:
-                          selectedIdx === idx && hovering ? "#fff" : "#8eadff",
+                          selectedIdx === idx && hovering ? "#fff" : "#915EFF",
                         transition: "color 0.3s, text-shadow 0.3s",
                         textShadow:
                           selectedIdx === idx && hovering
-                            ? "0 0 10px #fff, 0 0 100px #121212"
+                            ? "0 0 10px #915EFF, 0 0 50px #050505"
                             : "none",
                       }}
                     >
@@ -248,7 +245,7 @@ const Navbar = () => {
                       className="absolute left-0 bottom-0 h-[4px] rounded origin-left"
                       style={{
                         background:
-                          selectedIdx === idx && hovering ? "#fff" : "#8eadff",
+                          selectedIdx === idx && hovering ? "#fff" : "#915EFF",
                       }}
                       initial={{ width: 0, opacity: 0 }}
                       animate={

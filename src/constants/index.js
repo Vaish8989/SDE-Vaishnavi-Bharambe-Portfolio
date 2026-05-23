@@ -22,8 +22,24 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "achievement",
-    title: "Achievement",
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "achievements",
+    title: "Certifications",
+  },
+  {
+    id: "education",
+    title: "Education",
   },
   {
     id: "contact",
@@ -33,75 +49,100 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Software Developer",
+    title: "Full Stack Development",
     icon: web,
   },
   {
-    title: "Web Developer",
+    title: "Frontend Engineering",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Development",
     icon: backend,
   },
   {
-    title: "Full Stack Web Developer",
+    title: "REST API Development",
     icon: creator,
+  },
+];
+
+const experiences = [
+  {
+    title: "Full Stack Developer",
+    company_name: "Govindani Infotech",
+    icon: creator,
+    iconBg: "#111111",
+    date: "Present | Pune",
+    points: [
+      "Developing scalable full stack applications using React JS and Java Spring Boot",
+      "Building responsive frontend interfaces and RESTful APIs",
+      "Working with PostgreSQL and MySQL databases",
+      "Integrated cloud-based storage and delivery solutions using AWS, Azure Blob Storage and Cloudflare for optimized media handling, performance and scalability",
+      "Independently developed babajikibuti.com frontend and backend",
+      "API testing using Postman and version control with GitHub"
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Wynisco Inc.",
+    icon: web,
+    iconBg: "#0a0a0a",
+    date: "Aug 2024 - Oct 2025 | Pune",
+    points: [
+      "Developed responsive React JS interfaces",
+      "Built reusable React components",
+      "Worked with hooks and component-based architecture",
+      "Integrated REST APIs with frontend applications",
+      "Collaborated with backend team using GitHub workflows",
+      "Promoted from intern to full-time employee within 3 months"
+    ],
   },
 ];
 
 const achievements = [
   {
-    title: ["FreeCodeCamp"],
-    company_name: "freeCodeCamp",
-    icon: fcc,
-    iconBg: "#383E56",
-    date: "May 2024",
-    points: ["Responsive Web Design", "JavaScript"],
-    credential: [
-      "https://www.youtube.com/@heygenzcoder",
-      "https://www.youtube.com/@heygenzcoder",
-    ],
-  },
-  {
-    title: ["HackerRank"],
-    company_name: "HackerRank",
-    icon: hr,
-    iconBg: "#E6DEDD",
-    date: "Apr 2025",
-    points: [
-      "Python (Basic) Certificate",
-      "SQL (Basic) Certificate",
-      "CSS (Basic) Certificate",
-      "Go (Basic) Certificate",
-    ],
-    credential: [
-      "https://www.youtube.com/@heygenzcoder",
-      "https://www.youtube.com/@heygenzcoder",
-      "https://www.youtube.com/@heygenzcoder",
-      "https://www.youtube.com/@heygenzcoder",
-    ],
-  },
-  {
-    title: ["Certiport"],
-    company_name: "Certiport",
-    icon: cp,
-    iconBg: "#383E56",
-    date: "Apr 2025",
-    points: ["IT Specialist - HTML and CSS", "IT Specialist - Databases"],
-    credential: [
-      "https://www.youtube.com/@heygenzcoder",
-    ],
-  },
-  {
-    title: ["Coursera"],
-    company_name: "Coursera",
+    title: "Microsoft AWS Fundamentals",
+    company_name: "Udemy",
     icon: coursera,
-    iconBg: "#0056d2",
-    date: "Jul 2025",
-    points: ["IBM Full Stack Software Developer"],
-    credential: ["https://www.youtube.com/@heygenzcoder"],
+    iconBg: "#111111",
+    date: "2024",
+    points: ["Certification"],
   },
+  {
+    title: "Java Full Stack Development",
+    company_name: "QSpider",
+    icon: fcc,
+    iconBg: "#0a0a0a",
+    date: "2024",
+    points: ["Certification"],
+  }
+];
+
+const education = [
+  {
+    title: "Bachelor of Engineering — E&TC",
+    company_name: "Smt. Kashibai Navale Sinhagad College of Engineering",
+    icon: coursera,
+    iconBg: "#111111",
+    date: "SPPU Pune | CGPA: 8.78",
+    points: ["Electronics & Telecommunication", "Graduated with First Class with Distinction"],
+  },
+  {
+    title: "Diploma — E&TC",
+    company_name: "Government Polytechnic Khamgaon",
+    icon: fcc,
+    iconBg: "#0a0a0a",
+    date: "Percentage: 83.20%",
+    points: ["Electronics & Telecommunication"],
+  },
+  {
+    title: "Java Full Stack Development Program",
+    company_name: "QSpiders",
+    icon: hr,
+    iconBg: "#111111",
+    date: "Completed",
+    points: ["Intensive Full Stack Training"],
+  }
 ];
 
 const testimonials = [
@@ -113,98 +154,84 @@ const testimonials = [
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like genZcoderdoes.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "genZcoder boosted our website traffic by 50% through his smart optimization. We are Truly grateful!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
 ];
 
 const projects = [
   {
-    name: "Nova-Learn",
+    name: "Babaji Ki Buti",
     description:
-      "NovaLearn is an AI-powered platform that creates personalized learning paths with interactive content and quizzes. Designed with a futuristic 3D UI, it makes learning immersive, efficient, and goal-driven. 🚀",
+      "A full-stack e-commerce platform with React JS frontend and Java Spring Boot backend. Features include REST APIs, PostgreSQL database, product management, and integrated Azure Blob Storage, AWS S3 and Cloudflare CDN for optimized media delivery.",
     tags: [
-      {
-        name: "node",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "spline",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Flask",
-        color: "violet-text-gradient",
-      },
-      {
-        name: "sqlite3",
-        color: "orange-text-gradient",
-      },
+      { name: "React JS", color: "blue-text-gradient" },
+      { name: "Java Spring Boot", color: "green-text-gradient" },
+      { name: "PostgreSQL", color: "pink-text-gradient" },
+      { name: "AWS", color: "orange-text-gradient" },
     ],
-    image: novalearn,
-    source_code_link: "https://www.youtube.com/@heygenzcoder",
+    image: "/public/Images/babaji.png",
+    source_code_link: "https://github.com/",
+    live_link: "https://www.babajikibuti.com/",
   },
   {
-    name: "Multiplayer Pong Game",
+    name: "Govindani Infotech — Official Website",
     description:
-      "Multiplayer Pong Game with three modes: Play with a friend online, play side-by-side on the same screen, or challenge an AI opponent. Fast, fun, and competitive — classic Pong with modern multiplayer options! 🕹️🔥",
+      "Designed and developed the official corporate website independently from scratch. Built with React JS, JavaScript, HTML5 and CSS3. Features smooth animations, responsive layout, and deployed on Hostinger with Cloudflare for CDN and performance.",
     tags: [
-      {
-        name: "socket",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "pink-text-gradient",
-      },
+      { name: "React JS", color: "blue-text-gradient" },
+      { name: "JavaScript", color: "green-text-gradient" },
+      { name: "Cloudflare", color: "pink-text-gradient" },
+      { name: "Hostinger", color: "orange-text-gradient" },
     ],
-    image: ponggame,
-    source_code_link: "https://www.youtube.com/@heygenzcoder",
+    image: "/public/Images/GIIT.png",
+    source_code_link: "https://github.com/",
+    live_link: "https://govindaniit.com/",
+  },
+  {
+    name: "Gllora",
+    description:
+      "A Shopify storefront with a fully customized theme, responsive UI design, and integrated payment functionality. Delivered an enhanced mobile shopping experience, optimized product pages and smooth checkout flow for end users.",
+    tags: [
+      { name: "Shopify", color: "blue-text-gradient" },
+      { name: "Liquid", color: "green-text-gradient" },
+      { name: "HTML5", color: "pink-text-gradient" },
+      { name: "CSS3", color: "orange-text-gradient" },
+    ],
+    image: "/public/Images/Gllora.png",
+    source_code_link: "https://github.com/",
+    live_link: "https://gllora.com/",
+  },
+  {
+    name: "Employee Management System",
+    description:
+      "A comprehensive RESTful backend application for managing employees and departments. Built with Spring Boot and Hibernate, this system provides complete CRUD operations with MySQL for persistent data storage.",
+    tags: [
+      { name: "Spring Boot", color: "blue-text-gradient" },
+      { name: "Java", color: "green-text-gradient" },
+      { name: "Hibernate", color: "pink-text-gradient" },
+      { name: "MySQL", color: "orange-text-gradient" },
+    ],
+    image: "/public/Images/Employee.jpg",
+    source_code_link: "https://github.com/Vaish8989/Employee-Management-using-Spring-Boot",
+  },
+  {
+    name: "Login & Registration System",
+    description:
+      "A web-based user authentication system that allows users to register new accounts and log in securely. Built using classic Java web technologies including JSP, Servlets, and JDBC for database connectivity.",
+    tags: [
+      { name: "JSP", color: "blue-text-gradient" },
+      { name: "Servlets", color: "green-text-gradient" },
+      { name: "JDBC", color: "pink-text-gradient" },
+      { name: "MySQL", color: "orange-text-gradient" },
+    ],
+    image: "/public/Images/login.jpg",
+    source_code_link: "https://github.com/Vaish8989/Login-and-Registration-using-JSP-Servlet-JDBC-MYSQL",
   },
 ];
 
 const words = [
   { text: "Ideas", imgPath: ideas, font: "Arial, sans-serif" },
-  {
-    text: "Concepts",
-    imgPath: concepts,
-    font: "'Courier New', Courier, monospace",
-  },
-  {
-    text: "Designs",
-    imgPath: designs,
-    font: "'Times New Roman', Times, serif",
-  },
+  { text: "Concepts", imgPath: concepts, font: "'Courier New', Courier, monospace" },
+  { text: "Designs", imgPath: designs, font: "'Times New Roman', Times, serif" },
   { text: "Code", imgPath: code, font: "'Fira Mono', monospace" },
-  {
-    text: "Ideas",
-    imgPath: ideas,
-    font: "'Comic Sans MS', cursive, sans-serif",
-  },
-  { text: "Concepts", imgPath: concepts, font: "'Roboto', sans-serif" },
-  { text: "Designs", imgPath: designs, font: "'Georgia', serif" },
-  { text: "Code", imgPath: code, font: "'Source Code Pro', monospace" },
 ];
 
-export { achievements, projects, services, testimonials, words };
+export { achievements, projects, services, testimonials, words, experiences, education };

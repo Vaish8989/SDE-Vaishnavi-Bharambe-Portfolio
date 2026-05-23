@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = ({ isMobile }) => {
+const Computers = ({ isMobile, isAbout }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
   return (
@@ -21,15 +21,15 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3.30, -2.2] : [0, -3.80, -1.5]}
+        scale={isAbout ? (isMobile ? 0.6 : 0.95) : (isMobile ? 0.7 : 1.6)}
+        position={isAbout ? (isMobile ? [0, -1.5, -1.5] : [0, -1.5, -1.0]) : (isMobile ? [0, -3.30, -2.2] : [0, -5.5, -1.5])}
         rotation={[-0.00, -0.2, -0.1]}
       />
     </mesh>
   );
 };
 
-const ComputersCanvas = () => {
+const ComputersCanvas = ({ isAbout = false }) => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -53,12 +53,16 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  const cameraProps = isAbout
+    ? { position: [14, 2, 5], fov: 42 }
+    : { position: [20, 3, 5], fov: 25 };
+
   return (
     <Canvas
       frameloop='demand'
       shadows
       dpr={[1, 2]}
-      camera={{ position: [20, 3, 5], fov: 25 }}
+      camera={cameraProps}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -67,7 +71,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Computers isMobile={isMobile} isAbout={isAbout} />
       </Suspense>
 
       <Preload all />
